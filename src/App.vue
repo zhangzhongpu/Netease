@@ -2,12 +2,17 @@
   <div id="app">
     <img src="./assets/logo.png">
     <router-view/>
+    <FootNav/>
   </div>
 </template>
 
 <script>
+  import FootNav from './components/FootNav/FootNav'
 export default {
-  name: 'App'
+  name: 'App',
+  components:{
+    FootNav
+  }
 }
 </script>
 
